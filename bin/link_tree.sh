@@ -40,7 +40,7 @@ LIMIT="${3:-0}"
 
 date +"==== %c: BEGIN make link tree" | tee -a $LINK_TREE_LOG
 
-$LINK_TREE_CMD "$FILE_BASE_DIR" "$LINK_BASE_DIR" "$LIMIT" 2>&1 | tee -a $MK_DB_LOG
+$LINK_TREE_CMD "$FILE_BASE_DIR" "$LINK_BASE_DIR" "$LIMIT" 2>&1 | tee -a $LINK_TREE_LOG
 
 date +"---- %c:  END  make link tree" | tee -a $LINK_TREE_LOG
 
